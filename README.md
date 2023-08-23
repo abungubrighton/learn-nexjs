@@ -35,9 +35,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## During Setup This was the selection criterion
 ✔ Would you like to use TypeScript? … No / Yes       --> NO
+
 ✔ Would you like to use ESLint? … No / Yes            --> NO
+
 ✔ Would you like to use Tailwind CSS? … No / Yes      --> NO
+
 ✔ Would you like to use `src/` directory? … No / Yes   --> NO
+
 ✔ Would you like to use App Router? (recommended) … No / Yes --> YES
+
 ✔ Would you like to customize the default import alias? … No / Yes --> NO
 
