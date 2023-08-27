@@ -3,7 +3,12 @@ import {FaStar,FaCodeBranch,FaEye} from 'react-icons/fa';
 
 async function fetchRepo(repoName){
     const devName = "abungubrighton"
-    const response = await fetch(`https://api.github.com/repos/${devName}/${repoName}`);
+    const response = await fetch(`https://api.github.com/repos/${devName}/${repoName}`,
+    {
+        next:{
+            revalidate:60, // cache response for 60 seconds , after that check for new data
+        }
+    });
     const repoData = await response.json();
    
     return repoData; 
