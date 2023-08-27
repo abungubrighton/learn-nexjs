@@ -7,7 +7,7 @@ async function fetchRepos(){
     // allows for the spinner to load for 1 second
     await new Promise(resolve =>setTimeout(resolve, 1000));
 
-    const repos = response.json();
+    const repos = await response.json();
     return repos; 
 }
 
